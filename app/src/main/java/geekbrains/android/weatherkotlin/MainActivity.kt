@@ -1,22 +1,21 @@
-package geekbrains.android.weatherkotlin;
+package geekbrains.android.weatherkotlin
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import geekbrains.android.weatherkotlin.R
 
-import android.os.Bundle;
-
-public class MainActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
     }
 }
+
 /*
 Урок 1
-Создать новый проект в Android Studio без поддержки Kotlin.
-Сконфигурировать Kotlin в новом проекте (лучше вручную).
-Перевести MainActivity на Kotlin.
+    Создать новый проект в Android Studio без поддержки Kotlin.
+    Сконфигурировать Kotlin в новом проекте (лучше вручную).
+    Перевести MainActivity на Kotlin.
 Добавить кнопку в разметку и повесить на неё clickListener в Activity.
 Потренироваться в создании классов и функций, описанных в уроке, и убедиться, что всё работает. Например, создать тестовое приложение:
 Сформировать data class с двумя свойствами и вывести их на экран приложения.
