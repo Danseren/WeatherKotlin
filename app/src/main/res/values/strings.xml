@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">WeatherKotlin</string>
+    <string name="tv_start">New begining</string>
+    <string name="btn_go">make action</string>
 </resources>

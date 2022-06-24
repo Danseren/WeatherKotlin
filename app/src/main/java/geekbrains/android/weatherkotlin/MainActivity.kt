@@ -2,12 +2,21 @@ package geekbrains.android.weatherkotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
+import android.widget.Button
 import geekbrains.android.weatherkotlin.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        findViewById<Button>(R.id.btn_go).setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+                Log.d("My_Log", "It's alive!")
+            }
+
+        })
     }
 }
 
@@ -16,7 +25,7 @@ class MainActivity : AppCompatActivity() {
     Создать новый проект в Android Studio без поддержки Kotlin.
     Сконфигурировать Kotlin в новом проекте (лучше вручную).
     Перевести MainActivity на Kotlin.
-Добавить кнопку в разметку и повесить на неё clickListener в Activity.
+    Добавить кнопку в разметку и повесить на неё clickListener в Activity.
 Потренироваться в создании классов и функций, описанных в уроке, и убедиться, что всё работает. Например, создать тестовое приложение:
 Сформировать data class с двумя свойствами и вывести их на экран приложения.
 Создать Object. В Object вызвать copy и вывести значения скопированного класса на экран.
